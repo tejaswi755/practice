@@ -5,6 +5,9 @@ const ktextstyle = TextStyle(fontSize: 22.0,);
 const kActiveColour = Color(0xFFEF6D30);
 const kthumbColour = Color(0xFFED4A2F);
 const kinactiveColour = Color(0xFF8D8E98);
+const kappbarcolor = Color.fromRGBO(230, 226, 226, 1);
+const kcardstyle = TextStyle(fontSize: 22, fontWeight: FontWeight.bold);
+
 
 const List<String> streamList = [
   'AUDsvhevdv',
