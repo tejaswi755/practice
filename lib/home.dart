@@ -39,6 +39,8 @@ class _MyhomeState extends State<Myhome> {
       },
     );
   }
+
+  
   DropdownButton stateDropDown(List namelist) {
     List<DropdownMenuItem<String>> currencyItemlist = [];
     for (String item in namelist) {
@@ -61,32 +63,7 @@ class _MyhomeState extends State<Myhome> {
     );
   }
 
-  Container androidSlider(var height3) {
-    return Container(
-      child: Column(
-        children: [
-          const Text("Placement ", style: ktextstyle),
-          Text(
-            "$height3",
-            style: kNumbertextStyle2,
-          ),
-          Slider(
-            value: height3.toDouble(),
-            min: 0,
-            max: 5,
-            inactiveColor: kinactiveColour,
-            activeColor: kActiveColour,
-            thumbColor: kthumbColour,
-            onChanged: (double slidervalue) {
-              setState(() {
-                height3 = slidervalue.round();
-              });
-            },
-          ),
-        ],
-      ),
-    );
-  }
+ 
 
   @override
   Widget build(BuildContext context) {
