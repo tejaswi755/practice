@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sihhome/constants.dart';
-
+import 'package:sihhome/navigation_drawer.dart';
 class Myhome extends StatefulWidget {
   const Myhome({Key? key}) : super(key: key);
 
@@ -16,11 +16,14 @@ class _MyhomeState extends State<Myhome> {
   var height3 = 2;
 
   DropdownButton streamDropDown(List namelist) {
+
     List<DropdownMenuItem<String>> currencyItemlist = [];
     for (String item in namelist) {
       var menueItem = DropdownMenuItem(
+
         child: Text(item),
         value: item,
+        
       );
       currencyItemlist.add(menueItem);
     }
@@ -88,7 +91,9 @@ class _MyhomeState extends State<Myhome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: kActiveColour,
         title: const Text("My College"),
       ),
